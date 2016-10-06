@@ -19,7 +19,7 @@ public class One
 		secondNum = in.nextInt();
 		
 		System.out.println("Odd integers between " + firstNum + " and " + secondNum + " are:");
-		while (firstNum != secondNum)
+		while (a != secondNum)
 		{
 			a++;
 			if (a % 2 != 0)
@@ -28,7 +28,7 @@ public class One
 			}
 		}
 		
-		while (firstNum != secondNum)
+		while (b != secondNum)
 		{
 			b++;
 			if (b % 2 == 0)
