@@ -17,5 +17,13 @@ public class Three
 		}
  }
 
- // Your method goes here.
+	static double[] rotate (double[] x, int n) 
+	{
+		double[] temp = new double[x.length];
+		for (int j = 0; j > n -1; j++) 
+		{
+			temp[j] = x[j];
+		}
+		return x;
+	}
 }

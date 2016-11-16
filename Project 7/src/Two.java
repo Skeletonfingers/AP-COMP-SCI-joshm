@@ -35,15 +35,16 @@ public class Two
 	}	
 	public static double findMin(double[] x, int currentSize) //find the minimum value
 	{
+		int k;
 		double small = x[0];
-		for (int k = 1; k < currentSize; k++) 
+		for (k = 1; k < currentSize; k++) 
 		{
 			if (x[k] < small) 
 			{
 				small = x[k];
 			}
 		}
-		System.out.println("Minimum value: " + small);
+		System.out.println("Minimum value: " + small + " at index [" + k + "]");
 		return small;
 		
 	}
