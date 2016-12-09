@@ -17,13 +17,24 @@ public class Three
 		}
  }
 
-	static double[] rotate (double[] x, int n) 
+	public static double[] rotate(double[] x, int n) 
 	{
-		double[] temp = new double[x.length];
-		for (int j = 0; j > n -1; j++) 
-		{
-			temp[j] = x[j];
-		}
-		return x;
+	    if(n > x.length) 
+	        n = n % x.length;
+
+	    double[] one = new double[x.length];
+
+	    for(int i = 0; i < n; i++) 
+	    {
+	        one[i] = x[x.length - n + i];
+	    }
+
+	    int j = 0;
+	    for(int i = n; i < x.length; i++)
+	    {
+	        one[i] = x[j];
+	        j++;
+	    }
+		return one;
 	}
 }
